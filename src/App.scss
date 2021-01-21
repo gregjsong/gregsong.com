@@ -1,0 +1,61 @@
+@import "~bootstrap/scss/bootstrap";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --title-color: #333;
+  --text-color: rgba(33,33,33, 0.9);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 50px;
+  margin: -50px 0 0;
+}
+
+@keyframes slidein {
+  from {
+   margin-top: 80%;
+   opacity: 0;
+ }
+
+ to {
+   margin-top: 0%;
+   opacity: 1;
+ }
+}
+
+@keyframes slide-right-bounce {
+  0% {
+    transform: translateX(-100px);
+  }
+
+  40% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left-bounce {
+  0% {
+    transform: translateX(100px)
+  }
+
+  40% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}

@@ -1,0 +1,60 @@
+.skill-carousel {
+  height: 100vh;
+  width: 100%;
+  h2 {
+    color: var(--text-color);
+    padding-left: 40px;
+  }
+
+  .carousel {
+    height: 92vh;
+    display: flex;
+  }
+
+  .carousel-item {
+    height: 92vh;
+    background-color: #f8f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+      height: 92vh;
+      width: 90vw;
+
+      .logo {
+        height: 250px;
+        width: 250px;
+        margin: 20px auto;
+        padding: 10px;
+        // z-index: 2;
+      }
+      .card-body {
+        height: 200px;
+        width: 250px;
+        z-index: 0;
+        display: block;
+        // animation-name: slide-down;
+        // animation-duration: 2s;
+        
+        .card-title {
+          margin: 0;
+        }
+        .card-text {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-250px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
